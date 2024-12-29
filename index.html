@@ -1,0 +1,424 @@
+<!--HTML COURSE-->
+1. Forms
+Forms allow users to submit data to a server.
+Key elements include:
+
+<form>: Defines the form.
+
+<input>: Used for various types of user input.
+
+<label>: Provides labels for inputs.
+
+<button>: Creates a clickable button.
+
+Example:
+
+html
+<form action="/submit" method="post">
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name"><br>
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email"><br>
+  <button type="submit">Submit</button>
+</form>
+2. Semantic HTML
+Semantic HTML elements provide better structure and accessibility. 
+Common elements include:
+
+<article>: Represents a self-contained piece of content.
+
+<section>: Defines a section of content.
+
+<aside>: Contains content related to the main content, like a sidebar.
+
+<footer> and <header>: Define the footer and header of a document or section.
+
+Example:
+
+html
+<article>
+  <header>
+    <h1>My Article</h1>
+    <p>By Jane Doe</p>
+  </header>
+  <section>
+    <p>This is the main content of the article.</p>
+  </section>
+  <aside>
+    <p>Related information goes here.</p>
+  </aside>
+  <footer>
+    <p>Footer content goes here.</p>
+  </footer>
+</article>
+3. Media Elements
+HTML provides elements to embed media such as images, audio, and video.
+
+<img>: Embeds an image.
+
+<audio>: Embeds audio content.
+
+<video>: Embeds video content.
+
+Example:
+
+html
+<img src="image.jpg" alt="Description of image">
+<audio controls>
+  <source src="audio.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+<video width="320" height="240" controls>
+  <source src="video.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+4. Tables
+Tables organize data into rows and columns.
+
+<table>: Defines the table.
+
+<tr>: Table row.
+
+<th>: Table header.
+
+<td>: Table data cell.
+
+Example:
+
+html
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Alice</td>
+    <td>30</td>
+  </tr>
+  <tr>
+    <td>Bob</td>
+    <td>25</td>
+  </tr>
+</table>
+5. Advanced Attributes and Elements
+data- attributes: Store extra information that doesn’t fit in HTML’s standard attributes.
+
+<details> and <summary>: Create interactive elements to show/hide content.
+
+Example:
+
+html
+<p data-info="additional information">Hover over me to see additional info.</p>
+
+<details>
+  <summary>More Details</summary>
+  <p>This content is hidden until the summary is clicked.</p>
+</details>
+What is HTML?
+HTML (HyperText Markup Language) is the language used to create webpages.
+It consists of a series of elements that tell the browser how to display content.
+
+Basic Structure of an HTML Document
+Every HTML document has a basic structure, which includes the following elements:
+
+html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My First Webpage</title>
+</head>
+<body>
+  <h1>Hello, World!</h1>
+  <p>This is a paragraph.</p>
+</body>
+</html>
+Key Elements
+<!DOCTYPE html>: Tells the browser that this is an HTML5 document.
+
+<html>: The root element that contains all other HTML elements.
+
+<head>: Contains meta-information about the document, such as the title and links to stylesheets.
+
+<title>: Sets the title of the webpage, which appears in the browser tab.
+
+<body>: Contains the visible content of the webpage.
+
+<h1> to <h6>: Heading elements. <h1> is the largest heading, and <h6> is the smallest.
+
+<p>: Defines a paragraph.
+
+Adding More Content
+Lists: You can create ordered (numbered) or unordered (bulleted) lists.
+
+html
+<ul>
+  <li>Item 1</li>
+  <li>Item 2</li>
+</ul>
+
+<ol>
+  <li>First item</li>
+  <li>Second item</li>
+</ol>
+Links: Create clickable links using the <a> element.
+
+html
+<a href="https://www.example.com">Visit Example.com</a>
+Images: Display images using the <img> element.
+
+html
+<img src="image.jpg" alt="Description of image">
+Practice
+Try creating your own HTML file and experiment with these elements.
+You can open the file in a web browser to see how it looks.
+
+Once you're comfortable with these basics, we can move on to more advanced topics.
+Let me know if you have any questions or need further help! 😊 Happy coding
+
+Adding Attributes
+Attributes provide additional information about HTML elements. 
+They are always included in the opening tag and usually come in name-value pairs.
+
+Example:
+
+html
+<a href="https://www.example.com" target="_blank">Visit Example.com</a>
+href: Specifies the URL of the link.
+
+target: Specifies where to open the linked document (_blank opens it in a new tab).
+
+Creating Lists
+There are two types of lists in HTML: ordered (numbered) and unordered (bulleted).
+
+Unordered List:
+
+html
+<ul>
+  <li>Item 1</li>
+  <li>Item 2</li>
+  <li>Item 3</li>
+</ul>
+Ordered List:
+
+html
+<ol>
+  <li>First item</li>
+  <li>Second item</li>
+  <li>Third item</li>
+</ol>
+Adding Images
+Images are added using the <img> tag, 
+which requires a src attribute to specify the image source and an alt attribute for alternative text.
+
+Example:
+
+html
+<img src="image.jpg" alt="A description of the image">
+Creating Tables
+Tables are used to organize data in rows and columns.
+
+Example:
+
+html
+<table>
+  <tr>
+    <th>Header 1</th>
+    <th>Header 2</th>
+  </tr>
+  <tr>
+    <td>Row 1, Cell 1</td>
+    <td>Row 1, Cell 2</td>
+  </tr>
+  <tr>
+    <td>Row 2, Cell 1</td>
+    <td>Row 2, Cell 2</td>
+  </tr>
+</table>
+Forms
+Forms are used to collect user input.
+The <form> element wraps form controls like text fields, checkboxes, radio buttons, and submit buttons.
+
+Example:
+
+html
+<form action="/submit" method="post">
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name"><br>
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email"><br>
+  <button type="submit">Submit</button>
+</form>
+Basic HTML Project
+Let's create a basic HTML webpage combining these elements. Here’s a simple example:
+
+html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Simple Webpage</title>
+</head>
+<body>
+  <h1>Welcome to My Website</h1>
+  <p>This is a simple HTML page.</p>
+  
+  <h2>My Favorite Links</h2>
+  <ul>
+    <li><a href="https://www.example.com" target="_blank">Example</a></li>
+    <li><a href="https://www.google.com" target="_blank">Google</a></li>
+  </ul>
+  
+  <h2>My Favorite Picture</h2>
+  <img src="picture.jpg" alt="A beautiful view">
+
+  <h2>Contact Me</h2>
+  <form action="/submit" method="post">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name"><br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email"><br>
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>
+
+Creating Forms
+Forms are used to collect user input. You can create various types of input fields 
+such as text boxes, radio buttons, checkboxes, and more.
+
+Text Input and Buttons
+html
+<form action="/submit" method="post">
+  <label for="username">Username:</label>
+  <input type="text" id="username" name="username"><br>
+  
+  <label for="password">Password:</label>
+  <input type="password" id="password" name="password"><br>
+  
+  <button type="submit">Submit</button>
+</form>
+Radio Buttons and Checkboxes
+html
+<form>
+  <p>Select your gender:</p>
+  <input type="radio" id="male" name="gender" value="male">
+  <label for="male">Male</label><br>
+  
+  <input type="radio" id="female" name="gender" value="female">
+  <label for="female">Female</label><br>
+  
+  <input type="radio" id="other" name="gender" value="other">
+  <label for="other">Other</label><br><br>
+  
+  <input type="checkbox" id="subscribe" name="subscribe" value="newsletter">
+  <label for="subscribe">Subscribe to newsletter</label><br>
+  
+  <button type="submit">Submit</button>
+</form>
+Tables for Organizing Data
+Tables help in organizing data in a structured way.
+Each table row (<tr>) contains table header (<th>) or table data (<td>).
+
+html
+<table border="1">
+  <tr>
+    <th>Name</th>
+    <th>Age</th>
+    <th>City</th>
+  </tr>
+  <tr>
+    <td>Alice</td>
+    <td>30</td>
+    <td>New York</td>
+  </tr>
+  <tr>
+    <td>Bob</td>
+    <td>25</td>
+    <td>Los Angeles</td>
+  </tr>
+</table>
+Links and Navigation
+Creating links and navigation menus is essential for any website.
+
+Basic Links
+html
+<a href="https://www.example.com" target="_blank">Visit Example.com</a>
+href: Specifies the URL.
+
+target="_blank": Opens the link in a new tab.
+
+Navigation Menu
+html
+<nav>
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+Multimedia Elements
+You can add images, videos, and audio to your web pages.
+
+Adding Images
+html
+<img src="image.jpg" alt="A beautiful view" width="500" height="600">
+Adding Videos
+html
+<video width="320" height="240" controls>
+  <source src="movie.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+Practice Activity
+Create a simple HTML page using the elements we covered. Here’s a quick example for practice:
+
+html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Practice Page</title>
+</head>
+<body>
+  <h1>Welcome to My Practice Page</h1>
+  
+  <h2>Favorite Links</h2>
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  
+  <h2>My Favorite Picture</h2>
+  <img src="picture.jpg" alt="A beautiful view" width="300">
+  
+  <h2>Contact Me</h2>
+  <form action="/submit" method="post">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username"><br>
+    
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password"><br>
+    
+    <button type="submit">Submit</button>
+  </form>
+  
+  <h2>My Friends</h2>
+  <table border="1">
+    <tr>
+      <th>Name</th>
+      <th>Age</th>
+      <th>City</th>
+    </tr>
+    <tr>
+      <td>Alice</td>
+      <td>30</td>
+      <td>New York</td>
+    </tr>
+    <tr>
+      <td>Bob</td>
+      <td>25</td>
+      <td>Los Angeles</td>
+    </tr>
+  </table>
+</body>
+</html>
